@@ -1,0 +1,169 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color:white;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    margin-bottom: 20px;
+}
+
+main {
+    background-color: palevioletred;
+    padding: 20px;
+    border-radius: 8px;
+    
+
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2, h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#hoverMeArea {
+    background-color: #e9ecef;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#hoverMeArea:hover {
+    background-color: #d1d1d1;
+    color: #007bff;
+}
+
+#keypressInput {
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#keypressOutput {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#doubleClickMessage {
+    color: green;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Image Gallery Styles */
+#galleryContainer {
+    display: flex;
+    overflow: hidden;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.gallery-image {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-image.active {
+    opacity: 1;
+}
+
+.gallery-image:not(.active) {
+    opacity: 0.5;
+}
+
+/* Accordion Styles */
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.accordion-header:hover {
+    background-color: #e0e0e0;
+}
+
+.accordion-content {
+    padding: 10px;
+    background-color: white;
+    display: none; /* Initially hidden */
+}
+
+.accordion-content.open {
+    display: block;
+}
+
+/* Form Validation Styles */
+#myForm div {
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+#formMessage {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#formMessage.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+#formMessage.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}

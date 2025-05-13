@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Interactive Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Fun Zone!</h1>
+    </header>
+
+    <main>
+        <section id="event-handling">
+            <h2>Event Handling</h2>
+            <button id="clickMeButton">Click Me!</button>
+            <div id="hoverMeArea">something amazing happens once you hover</div>
+            <input type="text" id="keypressInput" placeholder="Type Something">
+            <p id="keypressOutput"></p>
+            <button id="doubleClickButton">Double Click Me (Secret!)</button>
+            <p id="doubleClickMessage" class="hidden"></p>
+        </section>
+
+        <section id="interactive-elements">
+            <h2>Interactive Elements</h2>
+            <div id="textChanger">
+                <button id="changeTextButton">Change Text</button>
+                <p id="dynamicText">Initial Text</p>
+            </div>
+
+            <div id="imageGallery">
+                <h3>Image Gallery</h3>
+                <div id="galleryContainer">
+                    <img src="lilies.jpg" alt="lillies" class="gallery-image active">
+                    <img src="pink roses.jpg" alt="roses" class="gallery-image">
+                    <img src="tulips.jpg" alt="tulips" class="gallery-image">
+                </div>
+                <button id="prevImage">Previous</button>
+                <button id="nextImage">Next</button>
+            </div>
+
+            <div id="accordion">
+                <h3>Accordion Content</h3>
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 1</button>
+                    <div class="accordion-content">Content for Section 1</div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 2</button>
+                    <div class="accordion-content">Content for Section 2</div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 3</button>
+                    <div class="accordion-content">Content for Section 3</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-validation">
+            <h2>Form Validation</h2>
+            <form id="myForm">
+                <div>
+                    <label for="name">Name (Required):</label>
+                    <input type="text" id="name" name="name" required>
+                    <p class="error-message" id="nameError"></p>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <p class="error-message" id="emailError"></p>
+                </div>
+                <div>
+                    <label for="password">Password (Min 8 chars):</label>
+                    <input type="password" id="password" name="password">
+                    <p class="error-message" id="passwordError"></p>
+                </div>
+                <button type="submit">Submit</button>
+                <div id="formMessage" class="hidden"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 JavaScript Playground</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
